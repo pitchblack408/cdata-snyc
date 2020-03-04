@@ -12,5 +12,4 @@ services:
       - LOCALDEV=true
     image: "${VAR_IMAGE_PREFIX:-localhost/}cdata-sync:${VAR_IMAGE_TAG:-latest}"
     ports:
-      - "8081:8081"
-
+      - "8181:8181"
