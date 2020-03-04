@@ -19,7 +19,7 @@ CData Sync allows you to move data from 200+ supported sources to a destination 
 #### Copy file from docker contatiner to local host
 `docker cp <container-id>:/file/path/within/container /host/path/target`
 ### Tools
-The tools folder is a place to save tools which need to be tracked, but are not used buy the docker build process.
+The tools folder is a place to save tools which need to be tracked, but are not used by the docker build process.
 
 autoexpect
 * Generate an Expect script from watching a session
