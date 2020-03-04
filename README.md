@@ -18,3 +18,11 @@ CData Sync allows you to move data from 200+ supported sources to a destination 
 `docker run -it --rm --entrypoint "sh" localhost/cdata-sync:latest`
 #### Copy file from docker contatiner to local host
 `docker cp <container-id>:/file/path/within/container /host/path/target`
+### Tools
+The tools folder is a place to save tools which need to be tracked, but are not used buy the docker build process.
+
+autoexpect
+* Generate an Expect script from watching a session
+* Not available in apk-get repo
+* http://expect.sourceforge.net/example/autoexpect.man.html
+* http://kiranshashi-cygwin.blogspot.com/2015/02/installing-autoexpect-on-linux-cygwin.html
