@@ -89,8 +89,7 @@ expect -exact "1\r
 Select target path \[/opt/datasync\] \r
 "
 send -- "\r"
-expect -exact "/apt/datasync\r
-press 1 to continue, 2 to quit, 3 to redisplay\r
+expect -exact "press 1 to continue, 2 to quit, 3 to redisplay\r
 "
 send -- "1\r"
 expect -exact "1\r
