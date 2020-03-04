@@ -12,7 +12,7 @@ Or if you want the latest then download them from CDATA
 
 * https://www.cdata.com/sync/download/
 
-##CDATA readme.txt
+## CDATA readme.txt
 
 The install file (setup.jar) is a Java application that requires Java 6 (J2SE) or above to run.
 If you do not have Java 6 installed, you may download it from http://java.sun.com/.
