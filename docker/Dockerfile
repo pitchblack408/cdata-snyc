@@ -48,13 +48,17 @@
 ## build
 FROM openjdk:8-jre-alpine
 
+
 RUN apk update && apk add bash expect
 RUN mkdir -p /app/CDataSync && chmod -R 777 /app
 COPY ./CDataSync /app/CDataSync
+RUN ls -al /app/CDataSync
+RUN test -f /app/CDataSync/setup.jar
+RUN test -f /app/CDataSync/datasync.war
 COPY ./docker/setup_cdata_sync.sh /app/setup_cdata_sync.sh
 RUN chmod 775 /app/setup_cdata_sync.sh
-RUN ./app/setup_cdata_sync.sh
-RUN mv /opt/datasync/ /app/datasync/
+RUN /app/setup_cdata_sync.sh
+#RUN mv /opt/datasync/ /app/datasync/
 WORKDIR /app
 ##
 ### runtime
