@@ -6,15 +6,15 @@ CData Sync allows you to move data from 200+ supported sources to a destination 
 * http://cdn.cdata.com/help/ASE/sync/
 ## Common Docker Commands
 ### Build Docker Container
-docker-compose -f docker-compose.yml build
+`docker-compose -f docker-compose.yml build`
 ### Run Docker Container Locally
-docker run -it --rm localhost/cdata-sync:latest
+`docker run -it --rm localhost/cdata-sync:latest`
 ### List local containers
-docker ps -a
+`docker ps -a`
 ### SSH into local docker container
-docker exec -it <container-id>
+`docker exec -it <container-id>`
 ### Additional Docker Commands
 #### Run Docker Container Locally with Entrypoint
-docker run -it --rm --entrypoint "sh" localhost/cdata-sync:latest
+`docker run -it --rm --entrypoint "sh" localhost/cdata-sync:latest`
 #### Copy file from docker contatiner to local host
-docker cp <container-id>:/file/path/within/container /host/path/target
+`docker cp <container-id>:/file/path/within/container /host/path/target`
