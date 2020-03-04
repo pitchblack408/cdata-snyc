@@ -1,15 +1,11 @@
 version: "3.3"
 services:
   cdata-sync:
-    volumes:
-      - ./local:/var/cdata-sync-local
     build:
       context: .
       labels:
         net.edgecastcdn.ceaws.edw.global.cdata-sync: "true"
       dockerfile: ./docker/Dockerfile
-    environment:
-      - LOCALDEV=true
     image: "${VAR_IMAGE_PREFIX:-localhost/}cdata-sync:${VAR_IMAGE_TAG:-latest}"
     ports:
       - "8181:8181"

@@ -23,6 +23,8 @@ COPY --from=0 /app/datasync/  /app/datasync/
 RUN chmod -R 777 /app
 RUN ls -al /app/datasync
 
+VOLUME /app/datasync/db
+
 WORKDIR /app
 #For debugging
 #CMD tail -f /dev/null
