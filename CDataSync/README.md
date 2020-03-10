@@ -3,12 +3,8 @@ Because of the size of CDATA's jar and war files they can't be included in the g
 * CDataSync/datasync.war
 * CDataSync/setup.jar
 
-To download the files, they are temporary shared on mmartin's google drive.
-* https://drive.google.com/open?id=1WKAHF1Q_HKAKJ0DYkX1ZaqxgAD9L7kBG
 
-* https://drive.google.com/open?id=1-RMBDeqE9QMuM7s8KCsqn5umA4c2ibtm
-
-Or if you want the latest then download them from CDATA
+If you want the latest then download them from CDATA
 
 * https://www.cdata.com/sync/download/
 
